@@ -1,0 +1,46 @@
+
+body{
+    background-color: #fff000 !important;
+    text-align: center;
+}
+h1{
+  font-size: 8em !important;
+  color: grey !important;
+}
+p{
+  color: grey !important;
+}
+.input-mysize{
+  width: 25em !important;
+  height: 3.5em !important;
+}
+form {
+    display: inline-block;
+}
+.form-group {
+    text-align: center;
+    padding-bottom: 25px;
+}
+#todo {
+    margin: 0 auto;
+    width: 500px;
+}
+
+a.close {
+  float: right;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.Task{
+  background: #fff;
+  list-style-type: none;
+  color: #333;
+  padding: 15px;
+  border-radius: 3px;
+  margin-top: 3px;
+}
