@@ -5,6 +5,7 @@ import Header from './header.js';
 import InputField from './inputfield.js'
 import TodoList from './todolist.js'
 import Task from './task.js'
+import Filter from './filter.js'
 
 
 
@@ -15,8 +16,8 @@ class TodoApp extends Component {
     super(props);
     this.state = {
       tasks: [
-      {taskName: "task1"},
-      {taskName: "task2"}
+      {taskName: "Call all clients at noon"},
+      {taskName: "Go to the bank at break"}
       ]
     }
   }
@@ -27,15 +28,18 @@ class TodoApp extends Component {
 
     this.setState({tasks: tasks});
   }
-
+  
   createTask(e){
-    if (e.which !== 13)
+
+    if  (e.which !== 13)
       return;
 
-    const tasks = this.state.tasks.slice(0);
-    tasks.push({taskName: e.target.value});
-    this.setState({tasks: tasks});
+    const task = this.state.tasks.slice(0);
+    task.push({taskName: e.target.value});
+    this.setState({task: task});
   }
+
+ 
 
 
   render() {
@@ -43,14 +47,17 @@ class TodoApp extends Component {
       <div className="TodoList center">
       <div className="formgroup ">
       <Header />
-      <InputField onKeyUphandler={this.createTask.bind((this))} />
       
+      <InputField />
       <TodoList>
       {
         this.state.tasks.map((task, i) => <Task onClickHandler={this.removeTask.bind(this, i)} taskName={task.taskName} key={i} />) }
         
       </TodoList>
-      <ul class="list-unstyled" id="todo"></ul>
+      <task>
+      <ul class="list-unstyled colorg" id="todo"></ul>
+      <Filter />
+      </task>
       </div>
       </div>
     );

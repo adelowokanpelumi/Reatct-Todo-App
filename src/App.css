@@ -19,11 +19,11 @@ form {
 }
 .form-group {
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 #todo {
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
 }
 
 a.close {
@@ -41,6 +41,31 @@ a.close {
   list-style-type: none;
   color: #333;
   padding: 15px;
-  border-radius: 3px;
-  margin-top: 3px;
+  margin-top: -19px;
+  margin-bottom: 3px;
+  margin-right: 35%;
+  margin-left: 31.5%;
+}
+
+.filter {
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 5px;
+    margin-top: -9px;
+    margin-right:34%;
+    margin-left: 33.5%;
+}
+
+.colorg{
 }
