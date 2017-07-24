@@ -4,5 +4,14 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+var taskslist = ["My Tasks"];
+
+var tasks = localStorage.getItem('storedTasks');
+
+if(tasks) {
+	taskslist =  JSON.parse(tasks);
+}
+
+
+ReactDOM.render(<App tasks={taskslist} />, document.getElementById('root'));
 registerServiceWorker();

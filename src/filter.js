@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-
-class Header extends Component {
+class Filter extends Component {
   render(){
     return(
-      <div>
-      <h1>Todos</h1>
-      <p>Tuteria | Create a task </p>
-      </div>
+    	
+    
+    <div className="filter" >
+    <p> 0 Item(s)</p>
+    </div>
 
-      );
+    );
   }
 }
 
-export default Header;
+export default Filter;

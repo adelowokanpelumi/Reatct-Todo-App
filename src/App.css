@@ -1,17 +1,17 @@
 
 body{
-    background-color: #fff000 !important;
+    background-color: #f5f5f5 !important;
     text-align: center;
 }
 h1{
   font-size: 8em !important;
-  color: grey !important;
+  color: rgba(255,50,50,0.52) !important;
 }
 p{
   color: grey !important;
 }
 .input-mysize{
-  width: 25em !important;
+  width: 30em !important;
   height: 3.5em !important;
 }
 form {
@@ -19,11 +19,11 @@ form {
 }
 .form-group {
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 #todo {
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
 }
 
 a.close {
@@ -41,6 +41,38 @@ a.close {
   list-style-type: none;
   color: #333;
   padding: 15px;
-  border-radius: 3px;
-  margin-top: 3px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-right: 31.3%;
+  margin-left: 28.4%;
+  font-size: 22px;
+  text-orientation: capitalize;
+}
+
+.button {
+  margin-left: 30px;
+  background-color: #fff !important;
+}
+
+.filter {
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 5px;
+    margin-top: -9px;
+     margin-right: 30.4%;
+      margin-left: 30.5%;
+}
+
+.colorg{
 }
