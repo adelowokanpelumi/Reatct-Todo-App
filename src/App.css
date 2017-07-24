@@ -41,6 +41,7 @@ a.close {
   list-style-type: none;
   color: #333;
   padding: 15px;
+<<<<<<< HEAD
   margin-top: -10px;
   margin-bottom: 10px;
   margin-right: 31.3%;
@@ -52,6 +53,12 @@ a.close {
 .button {
   margin-left: 30px;
   background-color: #fff !important;
+=======
+  margin-top: -19px;
+  margin-bottom: 3px;
+  margin-right: 35%;
+  margin-left: 31.5%;
+>>>>>>> 00254edbc7179aafc4a32b51566f79074d1319d9
 }
 
 .filter {
@@ -70,8 +77,13 @@ a.close {
     /* Padding for demo purposes */
     padding: 5px;
     margin-top: -9px;
+<<<<<<< HEAD
      margin-right: 30.4%;
       margin-left: 30.5%;
+=======
+    margin-right:34%;
+    margin-left: 33.5%;
+>>>>>>> 00254edbc7179aafc4a32b51566f79074d1319d9
 }
 
 .colorg{
