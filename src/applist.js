@@ -20,9 +20,10 @@ class TodoAppList extends Component {
   render() {
 
   	var items = this.props.tasks.map((elem, i) => {
-  		return <li className="Task" key={i}>
-                <span>{elem}</span>
-                <button onClick={this.remove}>x</button>
+  		return <li className={elem.checked===true? 'done':'.li'} key={i}>
+                    <input  className = "input-group-addon" checked={elem.checked} type = "radio" />
+                  {elem}
+                  <span className="remove" onClick={this.remove}>x</span> 
               </li>
   	});
     return (
