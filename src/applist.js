@@ -15,15 +15,15 @@ class TodoAppList extends Component {
     var value = elem.target.parentNode.querySelector('span').innerText;
     this.props.remove(value);
   }
- 
+
 
   render() {
 
   	var items = this.props.tasks.map((elem, i) => {
-  		return <li className={elem.checked===true? 'done':'.li'} key={i}>
-                    <input  className = "input-group-addon" checked={elem.checked} type = "radio" />
+  		return <li className="container col-xs-4 col-md-offset-4 task" key={i}>
+                    
                   {elem}
-                  <span className="remove" onClick={this.remove}>x</span> 
+                  <span className="remove" onClick={this.remove}>x</span>
               </li>
   	});
     return (

@@ -31,7 +31,7 @@ class Todo extends React.Component {
 
     updateLocalStorage(updatedTasks) {
       console.log("Tasks Updated");
-      localStorage.setItems('storedTasks', JSON.stringify(updatedTasks));
+      localStorage.setItem('storedTasks', JSON.stringify(updatedTasks));
 
     }
 

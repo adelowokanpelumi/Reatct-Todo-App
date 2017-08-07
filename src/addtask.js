@@ -21,11 +21,12 @@ class AddNewTask extends React.Component {
 
 		render(){
 			return (
-				
-		<form onSubmit={this.justSubmitted} >
-		<input type="text" className="form-control input-lg input-mysize" 
+				<div >
+		<form onSubmit={this.justSubmitted} className="form-group"  >
+		<input type="text" className="form-control col-md-6" 
       name="todo" placeholder="What needs to be done?"  />
 		</form>
+		</div>
 
 				);
 		}
