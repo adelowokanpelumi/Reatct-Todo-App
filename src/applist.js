@@ -4,15 +4,15 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 
-
 class TodoAppList extends Component {
   constructor(){
     super();
     this.remove = this.remove.bind(this);
+    this.props = {tasks: []};
   }
 
   remove(elem){
-    var value = elem.target.parentNode.querySelector('span').innerText;
+    var value = elem.target.parentNode.querySelector('button').innerText;
     this.props.remove(value);
   }
 
@@ -20,16 +20,21 @@ class TodoAppList extends Component {
   render() {
 
   	var items = this.props.tasks.map((elem, i) => {
-  		return <li className="container col-xs-4 col-md-offset-4 task" key={i}>
-                    
-                  {elem}
-                  <span className="remove" onClick={this.remove}>x</span>
+  		return <div className="col-md-offset-4 col-md-4 task">
+                <li className="" key={i}>
+                <input className="round text-left" type="checkbox" id="checkbox" />
+                  <label for="checkbox" className="text-center">{elem}</label>
+                  <button className="remove" onClick={this.remove}>x</button>
               </li>
+              </div>
   	});
     return (
-      <ul>
+      <div>
+      <ul className="">
       	{items}
       </ul>
+      <p id="counter"  className="row col-md-4 col-md-offset-4 filter"> {(this.props.tasks.length ) + ' item(s)'} </p>
+      </div>
     );
   }
 }

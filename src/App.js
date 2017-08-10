@@ -3,7 +3,6 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import AddNewTask from './addtask.js';
 import TodoAppList from './applist.js';
-import Filter from './filter.js';
 
 
 
@@ -42,7 +41,6 @@ class Todo extends React.Component {
         <p>Tuteria | Create a task </p>
         <AddNewTask updateList={this.updateList}/>
         <TodoAppList tasks= {this.state.tasks} remove={this.removeTask} />
-        <Filter/>
       </div>
         );
     }

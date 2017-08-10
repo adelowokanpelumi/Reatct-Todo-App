@@ -17,8 +17,7 @@ class InputField extends Component {
   render(){
     return(
     <form className="role" onsubmit="handle">
-      <input type="text" className="form-control input-lg input-mysize" 
-      name="todo" placeholder="What needs to be done?"  />
+      <input type="text" className="" name="todo" placeholder="What needs to be done?"  />
     </form>
     );
   }

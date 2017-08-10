@@ -1,6 +1,6 @@
 
 body{
-    background-color: #f5f5f5 !important;
+    background-color: #f5f5f5!important;
     text-align: center;
 }
 h1{
@@ -11,8 +11,9 @@ p{
   color: grey !important;
 }
 .input-mysize{
-  width: 30em !important;
-  height: 3.5em !important;
+  width: 447px !important;
+  height: 60px !important;
+  margin-left: 55px !important;
 }
 form {
     display: inline-block;
@@ -30,6 +31,32 @@ a.close {
   float: right;
 }
 
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin-right: 20px;
+  background-color: #fff !important;
+}
+
+input[type=checkbox]:checked + label {
+  color: #f5f5f5 !important;
+  text-decoration: line-through;
+}
+
+input{
+  float: left !important;
+  margin-right: 20px !important;
+}
+
+label{
+  float: left;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -38,29 +65,21 @@ a.close {
 .task{
   background: #fff;
   list-style-type: none;
-  color: #333;/*
-  max-width: 550px;*/
+  color: #333;
   word-wrap: break-word;
-  /*text-align: center !important;*/
   padding: 15px;
   margin-top: 1px;
-  padding-top: 10px;
-  /*margin-bottom: 10px;
-  margin-right: 31.3%;
-  margin-left: 28.4%;*/
   font-size: 22px;
-  text-orientation: capitalize;
-  float: center !important;
 }
 
-.done{
-  text-decoration: line-through !important;
-  color: red;
-}
 
-.button {
-  margin-left: 30px;
-  background-color: #fff !important;
+button{
+  background: #fff !important;
+  color: grey !important;
+  border: none !important;
+}
+button:hover{
+  color: red !important;
 }
 
 .filter {
@@ -78,20 +97,19 @@ a.close {
     0 20px 1px -9px rgba(0,0,0,0.15);
     /* Padding for demo purposes */
     padding: 5px;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-    margin-top: 1px;/*
-    margin-left: 50px;
-    margin-right: 50px;*//*
-    text-align: justify;*/
+    /*float: center !important;*/
+    margin-left: 480px !important;
+    width: 445px !important;
+  height: 60px !important;
+  margin-top: 1px !important;
     
 }
 
 .remove {
   float: right !important;
-  color: red !important;
 }
 
 .elem{
   float: left !important;
 }
+

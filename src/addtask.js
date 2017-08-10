@@ -23,7 +23,7 @@ class AddNewTask extends React.Component {
 			return (
 				<div >
 		<form onSubmit={this.justSubmitted} className="form-group"  >
-		<input type="text" className="form-control col-md-6" 
+		<input type="text" className="form-control col-md-6 input-mysize" 
       name="todo" placeholder="What needs to be done?"  />
 		</form>
 		</div>
