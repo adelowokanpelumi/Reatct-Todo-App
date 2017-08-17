@@ -4,16 +4,20 @@ body{
     text-align: center;
 }
 h1{
-  font-size: 8em !important;
-  color: rgba(255,50,50,0.52) !important;
+  font-size: 6em !important;
+  color: rgba(175, 47, 47, 0.15) !important;
 }
 p{
   color: grey !important;
 }
 .input-mysize{
-  width: 447px !important;
-  height: 60px !important;
-  margin-left: 55px !important;
+  /*width: 447px !important;*/
+  height: 70px !important;
+  font-size: 24px !important;
+  padding-left: 35px !important;
+  padding-bottom: 16px !important;
+  padding-top: 16px !important;
+  font-family: arial !important;
 }
 form {
     display: inline-block;
@@ -31,29 +35,56 @@ a.close {
   float: right;
 }
 
+
+
 input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  border-radius: 100% !important;
+  cursor: pointer;
+  vertical-align: middle !important;
+  position: relative;
+  content: "m" !important;
+  -webkit-appearance: none !important;
+  background-color: #fff !important;
+  outline: none !important;
+  border: 1px solid #ddd !important;
+}
+
+input[type=checkbox]:checked:after  {
   width: 20px;
   height: 20px;
-  border: 1px solid #ccc;
-  border-radius: 50%;
+  border-radius: 100% !important;
   cursor: pointer;
-  position: relative;
-  margin-right: 20px;
+  color: grey !important;
+  content: "✔" !important;
   background-color: #fff !important;
+  outline: none !important;
+  position: absolute;
+  top: 0 !important;
+  margin-left: 5px;
 }
 
 input[type=checkbox]:checked + label {
-  color: #f5f5f5 !important;
+  color: grey !important;
   text-decoration: line-through;
+  border-radius: 100% !important;
 }
-
+ul{
+  margin-left: -30px !important;
+}
 input{
   float: left !important;
   margin-right: 20px !important;
+  border: none !important;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 label{
   float: left;
+  border-radius: 100% !important;
+  font-weight: 400 !important;
 }
 
 
@@ -67,22 +98,24 @@ label{
   list-style-type: none;
   color: #333;
   word-wrap: break-word;
-  padding: 15px;
-  margin-top: 1px;
-  font-size: 22px;
+  padding: 20px;
+  margin-top: -34px !important;
+  font-size: 24px;
+  width: 555px !important;
 }
 
 
 button{
   background: #fff !important;
-  color: grey !important;
+  color: #fff !important;
   border: none !important;
 }
-button:hover{
-  color: red !important;
+
+.task:hover button {
+  color:  rgba(175, 47, 47, 0.15) !important;
 }
 
-.filter {
+.filter{
   background: #fff;
   box-shadow:
     /* The top layer shadow */
@@ -96,11 +129,12 @@ button:hover{
     /* The third layer shadow */
     0 20px 1px -9px rgba(0,0,0,0.15);
     /* Padding for demo purposes */
-    padding: 5px;
+    padding: 8px;
     /*float: center !important;*/
-    margin-left: 480px !important;
-    width: 445px !important;
-  height: 60px !important;
+    /*margin-left: 480px !important;
+    width: 445px !important;*/
+  height: 40px !important;
+  width: 562px !important;
   margin-top: 1px !important;
     
 }
@@ -112,4 +146,27 @@ button:hover{
 .elem{
   float: left !important;
 }
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+
+  font-style: italic !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+
+  font-style: italic !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+  font-style: italic !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+
+  font-style: italic !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+
+  font-style: italic !important;
+}
+
+
 

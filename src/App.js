@@ -3,6 +3,7 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import AddNewTask from './addtask.js';
 import TodoAppList from './applist.js';
+import Header from './header.js';
 
 
 
@@ -36,9 +37,8 @@ class Todo extends React.Component {
 
     render(){
       return (
-      <div>
-        <h1> Todos</h1>
-        <p>Tuteria | Create a task </p>
+      <div className="">
+      <Header />
         <AddNewTask updateList={this.updateList}/>
         <TodoAppList tasks= {this.state.tasks} remove={this.removeTask} />
       </div>

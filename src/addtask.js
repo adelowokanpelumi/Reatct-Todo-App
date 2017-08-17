@@ -21,9 +21,9 @@ class AddNewTask extends React.Component {
 
 		render(){
 			return (
-				<div >
-		<form onSubmit={this.justSubmitted} className="form-group"  >
-		<input type="text" className="form-control col-md-6 input-mysize" 
+				<div className="row">
+		<form onSubmit={this.justSubmitted} className="form-group col-md-offset-4 col-md-5"  >
+		<input type="toggle" className="form-control input-mysize" 
       name="todo" placeholder="What needs to be done?"  />
 		</form>
 		</div>
