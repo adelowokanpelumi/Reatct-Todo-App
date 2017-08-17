@@ -18,6 +18,7 @@ p{
   padding-bottom: 16px !important;
   padding-top: 16px !important;
   font-family: arial !important;
+  margin-bottom: -33px !important;
 }
 form {
     display: inline-block;
@@ -100,7 +101,6 @@ label{
   color: #333;
   word-wrap: break-word;
   padding: 20px;
-  margin-top: -34px !important;
   font-size: 24px;
   width: 555px !important;
 }
