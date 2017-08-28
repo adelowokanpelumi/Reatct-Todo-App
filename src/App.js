@@ -17,6 +17,7 @@ class Todo extends React.Component {
 
     updateList(text) {
       var updatedTasks = this.state.tasks;
+      console.log(updatedTasks)
       updatedTasks.unshift(text);
       this.setState({tasks: updatedTasks});
       this.updateLocalStorage(updatedTasks);
@@ -27,6 +28,14 @@ class Todo extends React.Component {
       updatedTasks.splice(updatedTasks.indexOf(text), 1);
       this.setState({tasks: updatedTasks});
       this.updateLocalStorage(updatedTasks);
+    }
+
+    ClearAll(text) {
+      var tasks = this.props.tasks;
+      tasks.splice(tasks.indexOf(text),);
+      this.setState({tasks: tasks});
+      this.updateLocalStorage(tasks);
+
     }
 
     updateLocalStorage(updatedTasks) {
@@ -40,7 +49,7 @@ class Todo extends React.Component {
       <div className="">
       <Header />
         <AddNewTask updateList={this.updateList}/>
-        <TodoAppList tasks= {this.state.tasks} remove={this.removeTask} />
+        <TodoAppList tasks= {this.state.tasks} Clear={this.ClearAll} remove={this.removeTask} />
       </div>
         );
     }

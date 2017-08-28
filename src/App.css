@@ -100,20 +100,41 @@ label{
   list-style-type: none;
   color: #333;
   word-wrap: break-word;
-  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   font-size: 24px;
   width: 555px !important;
 }
+li{
+  list-style-type: none !important;
+  display: inline !important;
+  margin-right: 20px;
+}
 
-
+.counts{
+ /* margin-right: 40px !important;*/
+ float: left !important;
+}
+.clear{
+  float: right !important;
+  margin-left: 30px;
+}
 button{
   background: #fff !important;
   color: #fff !important;
   border: none !important;
 }
 
+leftt{
+  float: left !important;
+}
+
+rightt{
+  margin-left: 90px !important;
+}
+
 .task:hover button {
-  color:  rgba(175, 47, 47, 0.15) !important;
+  color:  #b83f45 !important;
 }
 
 .filter{
@@ -169,5 +190,12 @@ button{
   font-style: italic !important;
 }
 
+.decor{
+  text-decoration: none !important;
+  color: black;
+}
 
+.show{
+  color: black !important;
+}
 
