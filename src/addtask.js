@@ -16,7 +16,7 @@ class AddNewTask extends React.Component {
 			var input = event.target.querySelector('input');
 			var value = input.value;
 			input.value = '';
-			this.props.updateList(value);
+			this.props.updateList({text: value,completed:false});
 		}
 
 		render(){

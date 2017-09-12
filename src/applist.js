@@ -9,6 +9,7 @@ class TodoAppList extends Component {
     super();
     this.remove = this.remove.bind(this);
     this.Clear = this.Clear.bind(this);
+    this.update= this.update.bind(this)
     this.props = {tasks: []};
   }
 
@@ -17,7 +18,10 @@ class TodoAppList extends Component {
     this.props.remove(value);
   }
 
-
+  update(e, index){
+    this.props.updateItem(index);
+    console.log("saved");
+  }
 
 
   Clear(elem){
@@ -31,8 +35,11 @@ class TodoAppList extends Component {
   	var items = this.props.tasks.map((elem, i) => {
   		return  <div className="col-md-offset-4 col-md-4 task" id="{this.generateUniqueId}" data->
                 <li className="" key={i}>
-                <input className="round text-left" type="checkbox" id="checkbox" />
-                  <label for="checkbox" className="text-center">{elem}</label>
+                <input onChange={(e)=>this.update(e,i)}
+                        className="round text-left" type="checkbox"
+                        autocomplete="on" id="checkbox" value="1"
+                        ref={'ref_' + i} />
+                  <label for="checkbox" className="text-center">{elem.text}</label>
                   <button className="remove" onClick={this.remove}>x</button>
               </li>
               </div>
@@ -47,15 +54,14 @@ class TodoAppList extends Component {
           <ul id="counter" className="ulfilter">
           <span className="counts">{(this.props.tasks.length ) + ' items left'} </span>
             <li className="rightt" >
-              <a href="#/All" className="decor"> All</a>
+              <a href="/App" className="decor"> All</a>
             </li>
             <li >
-              <a href="#/Active" className="decor">Active</a>
+              <a href="/Active" className="decor">Active</a>
             </li>
             <li >
-              <a href="#/Completed" className="decor">Completed</a>
+              <a href="/Completed" className="decor">Completed</a>
             </li>
-            <button className="clear show" onClick={this.FullyCompleted}>Clear All</button>
           </ul>
 
         </div>
